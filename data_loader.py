@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = OpenAI()
-EMBED_MODEL = "text-embedding-large"
-EMBED_DIM = 3072
+EMBED_MODEL = "text-embedding-3-small"
+EMBED_DIM = 1536
 
 splitter =SentenceSplitter(chunk_size=1000, chunk_overlap=200)
 
@@ -23,6 +23,5 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
     response = client.embeddings.create(
         model = EMBED_MODEL,
         input = texts,
-
     )
     return [item.embedding for item in response.data]
