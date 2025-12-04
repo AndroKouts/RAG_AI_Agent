@@ -23,6 +23,8 @@ Streamlit UI → FastAPI Server → Inngest Functions
                     OpenAI Embeddings + Qdrant Vector DB
 ```
 
+---
+
 ## 📦 Prerequisites
 
 - Python **3.8+**  
@@ -60,6 +62,7 @@ Streamlit UI → FastAPI Server → Inngest Functions
 *Receive grounded, citation-rich answers powered by RAG.*
 
 ---
+
 
 
 
