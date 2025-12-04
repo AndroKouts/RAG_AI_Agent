@@ -18,3 +18,25 @@ Streamlit UI → FastAPI Server → Inngest Functions
                                       ↓
                     OpenAI Embeddings + Qdrant Vector DB
 ```
+
+## Prerequisites
+
+- Python 3.8+
+- Qdrant Server (running on `localhost:6333`)
+- OpenAI API Key
+- Inngest Dev Server (running on `localhost:8288`)
+
+## Screenshots
+
+### Upload PDF
+![PDF Upload Interface](screenshots/upload_pdf.png)
+*Upload your PDF documents for processing and indexing*
+
+### Ask Questions
+![Query Interface - Before](screenshots/query_before.png)
+*Enter your question about the ingested documents*
+
+### Get AI Answers
+![Query Interface - After](screenshots/query_after.png)
+*Receive context-based answers with source citations*
+
