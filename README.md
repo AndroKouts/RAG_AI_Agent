@@ -29,14 +29,15 @@ Streamlit UI → FastAPI Server → Inngest Functions
 ## Screenshots
 
 ### Upload PDF
-![PDF Upload Interface](screenshots/upload_pdf.png)
+![PDF Upload Interface](screenshots/pdf_shot.png)
 *Upload your PDF documents for processing and indexing*
 
 ### Ask Questions
-![Query Interface - Before](screenshots/query_before.png)
+![Query Interface - Before](screenshots/before_asking.png)
 *Enter your question about the ingested documents*
 
 ### Get AI Answers
-![Query Interface - After](screenshots/query_after.png)
+![Query Interface - After](screenshots/after_asking.png)
 *Receive context-based answers with source citations*
+
 
