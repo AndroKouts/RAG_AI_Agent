@@ -1,17 +1,21 @@
 # RAG AI Agent
 
-A Retrieval-Augmented Generation application that processes PDFs using Inngest workflows and answers questions about their content. Built with Qdrant vector database, OpenAI embeddings/LLM, FastAPI backend, and Streamlit UI.
+A lightweight Retrieval-Augmented Generation (RAG) system that processes PDFs, stores their embeddings, and answers questions grounded in their content. Built with **Inngest**, **Qdrant**, **OpenAI embeddings/LLMs**, **FastAPI**, and a **Streamlit** UI.
 
-## Features
+---
 
-- 📄 PDF processing with automatic chunking and indexing
-- 🔄 Event-driven architecture with Inngest workflows
-- 🔍 Semantic search using Qdrant vector database
-- 💬 AI-powered answers with GPT-4o-mini
-- 🎨 Simple Streamlit UI for upload and querying
-- 📊 Observable workflows via Inngest Dev Server
+## 🚀 Features
 
-## Architecture
+- 📄 Automated PDF ingestion — chunking, embedding, and indexing  
+- 🔄 Event-driven workflows powered by Inngest  
+- 🔍 Semantic search using Qdrant  
+- 💬 Context-aware answers with GPT-4o-mini  
+- 🎨 Clean Streamlit interface for upload & querying  
+- 📊 Workflow observability via the Inngest Dev Server  
+
+---
+
+## 🧱 Architecture
 
 ```
 Streamlit UI → FastAPI Server → Inngest Functions
@@ -19,29 +23,44 @@ Streamlit UI → FastAPI Server → Inngest Functions
                     OpenAI Embeddings + Qdrant Vector DB
 ```
 
-## Prerequisites
+## 📦 Prerequisites
 
-- Python 3.8+
-- Qdrant Server (running on `localhost:6333`)
-- OpenAI API Key
-- Inngest Dev Server (running on `localhost:8288`)
+- Python **3.8+**  
+- Qdrant server running at **localhost:6333**  
+- OpenAI API key  
+- Inngest Dev Server running at **localhost:8288**
 
-## Screenshots
+---
+
+## 🖼️ Screenshots
 
 ### Upload PDF
-![PDF Upload Interface](screenshots/pdf_shot.png)
+<p align="center">
+  <img src="screenshots/pdf_shot.png" width="550" />
+</p>
 
-*Upload your PDF documents for processing and indexing*
+*Upload your PDF documents for extraction and indexing.*
+
+---
 
 ### Ask Questions
-![Query Interface - Before](screenshots/before_asking.png)
+<p align="center">
+  <img src="screenshots/before_asking.png" width="550" />
+</p>
 
-*Enter your question about the ingested documents*
+*Type any question related to your uploaded documents.*
+
+---
 
 ### Get AI Answers
-![Query Interface - After](screenshots/after_asking.png)
+<p align="center">
+  <img src="screenshots/after_asking.png" width="550" />
+</p>
 
-*Receive context-based answers with source citations*
+*Receive grounded, citation-rich answers powered by RAG.*
+
+---
+
 
 
 
