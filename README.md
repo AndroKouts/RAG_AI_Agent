@@ -1,6 +1,7 @@
-# RAG AI Agent
+# 🧠 RAG AI Agent
 
-A lightweight Retrieval-Augmented Generation (RAG) system that processes PDFs, stores their embeddings, and answers questions grounded in their content. Built with **Inngest**, **Qdrant**, **OpenAI embeddings/LLMs**, **FastAPI**, and a **Streamlit** UI.
+RAG AI Agent ingests PDFs, indexes their content, and provides **AI-powered answers** to user queries using a combination of vector search and GPT-based language models.
+Built with **Inngest**, **Qdrant**, **OpenAI embeddings/LLMs**, **FastAPI**, and a **Streamlit** UI.
 
 ---
 
@@ -22,6 +23,16 @@ Streamlit UI → FastAPI Server → Inngest Functions
                                       ↓
                     OpenAI Embeddings + Qdrant Vector DB
 ```
+## 📁 Project Structure
+
+- **streamlit_app.py** – Streamlit frontend    
+- **vector_db.py** – Stores and retrieves vectors with metadata
+- **data_loader.py** – Loads, chunks and embeds PDF Documents
+- **custom_types.py** – Data models for RAG operations
+- **.venv** - Stores private OPENAI API key
+- **qdrant_storage/** - Qdrant-powered vector storage
+- **screenshots/** – Demo and UI images
+- **uploads/** - Uploaded PDFs
 
 ---
 
@@ -31,6 +42,16 @@ Streamlit UI → FastAPI Server → Inngest Functions
 - Qdrant server running at **localhost:6333**  
 - OpenAI API key  
 - Inngest Dev Server running at **localhost:8288**
+
+---
+
+## 🚀 How It Works
+
+1. **PDF Upload** – Users upload PDFs through the Streamlit interface.  
+2. **Automatic Chunking & Embedding** – Text is split into chunks and converted into embeddings using OpenAI.  
+3. **Vector Storage** – Embeddings are stored in Qdrant for semantic retrieval.  
+4. **Workflow Automation** – Inngest functions handle ingestion and indexing asynchronously.  
+5. **Question Answering** – Users ask questions, and the system returns answers grounded in the documents.  
 
 ---
 
@@ -62,6 +83,7 @@ Streamlit UI → FastAPI Server → Inngest Functions
 *Receive grounded, citation-rich answers powered by RAG.*
 
 ---
+
 
 
 
